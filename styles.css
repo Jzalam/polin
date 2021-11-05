@@ -1,0 +1,430 @@
+/* Description: Master CSS file */
+
+/*****************************************
+Table Of Contents:
+- General Styles
+- Header
+- Media Queries
+******************************************/
+
+/*****************************************
+Colors:
+-Background - #07081d
+- Buttons - 
+- Icons - 
+- Heading text - 
+- Body text - 
+******************************************/
+html {
+  overflow-x: hidden;
+}
+/**************************/
+/*     General Styles     */
+/**************************/
+
+/* top-section */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  overflow-x: hidden;
+  height: 100%;
+}
+/* global font setting */
+p,summary,li {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.fa-circle{
+  font-size: 2em;
+  color: #fff;
+  opacity: 0.8;
+    transition: all 0.2s ease;
+}
+.fa-circle:hover{
+  color: #fff !important;
+  opacity: 1 !important;
+    
+}
+.fab{
+  color: #2912a9;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+a:hover{
+  color: #cecece;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.625rem;
+  color: #fff;
+  margin-bottom: 0.875rem;
+  font-weight: 700;
+  margin-top: 0;
+  box-sizing: border-box;
+    line-height: 4.5rem;
+    letter-spacing: -0.4px;
+}
+h2 {
+  font-size: 3rem;
+  color: #e6e6e6;
+  font-family: "Cinzel", cursive;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(255, 0, 212), 0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(255, 0, 157), 0 0 102px rgb(255, 0, 212),
+    0 0 151px rgb(255, 0, 128);
+}
+h3 {
+  font-size: 2rem;
+  color: #e6e6e6;
+  font-family: "Cinzel", cursive;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(255, 0, 212), 0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(255, 0, 157), 0 0 102px rgb(255, 0, 212),
+    0 0 151px rgb(255, 0, 128);
+}
+body {
+  background: #07081d;
+}
+
+.text-container{
+  margin-bottom: 22%;
+}
+/* Button */
+.form-control-submit-button {
+	display: inline-block;
+	width: 10rem;
+	height: 3.5rem;
+	border: 1px solid #2912a9;
+	border-radius: 32px;
+	background-color: #2912a9;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	cursor: pointer;
+	transition: all 0.2s;
+    margin-left: -0.375rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-control-submit-button:hover {
+	border: 1px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+/* main-section */
+
+.container {
+  margin: 3% auto 15% auto;
+  justify-content: center;
+  width: 70%;
+  text-align: center;
+}
+.logo,
+.main-desc,header {
+  text-align: center;
+}
+
+.main-desc {
+  margin-bottom: 2.75rem;
+  font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+/* about and halloween-section */
+.Halloween {
+  width: 80%;
+  margin: 15% auto;
+}
+.About {
+  width: 80%;
+  margin: 15% auto;
+}
+.halloween-image img {
+  width: 80%;
+  border-radius: 50px;
+}
+.halloween-image,
+.about-image {
+  text-align: center;
+}
+/* collection and team-section */
+.Collection,
+.Team {
+  width: 80%;
+  margin: 15% auto;
+}
+.collection-container {
+  text-align: center;
+}
+.collection {
+  margin: 8% 0;
+}
+.collection-head,
+.Team-head {
+  text-align: center;
+}
+
+.collection-container img {
+  border: 10px solid #2d1934;
+  border-radius: 25px;
+  height: 333px;
+  width: 333px;
+}
+.Team-head p {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 1.5rem;
+}
+.team-content {
+  margin: 5% 0;
+}
+.team-image img {
+  height: 500px;
+  width: 500px;
+}
+.team-text {
+  margin-top: 4%;
+}
+.team-text h2 {
+  font-size: 2rem;
+}
+.team-text p {
+  font-size: 1.5rem;
+}
+/* Roadmap */
+.roadmap-heading{
+  text-align: center;
+}
+.roadmap{
+  width: 70%;
+  margin: 15% auto;
+}
+.roadmap-single{
+  margin: 5% auto;
+}
+.done ::marker {
+  color: green;
+}
+/* FAQ */
+
+.faq {
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(10, 10, 10), rgb(15, 21, 77));
+}
+.box {
+  padding: 10% auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.faqs {
+  padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker {
+  float: right;
+  margin-top: 3px;
+}
+
+details {
+  background: transparent;
+  padding: 10px 20px;
+  color: #e6e6e6;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+details summary {
+  outline: none;
+}
+.pt-5 {
+  padding: 6rem !important;
+}
+/* footer-section */
+footer {
+  min-height: 270px;
+  text-align: center;
+  background: #000;
+  background-image: url(./images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer span a {
+  margin: 0 1%;
+  color: #b11515;
+  transition: all 0.2s ease;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+footer span a:hover {
+  color: #e6e6e6;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+a.footer-link {
+  display: block;
+  margin-top: 1%;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+a.footer-link:hover {
+  text-decoration: none;
+}
+.footer {
+  min-height: 270px;
+}
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .roadmap{
+    width: 90%;
+    margin: 15% auto;
+  }
+  .row {
+    display: block;
+  }
+  .container {
+    text-align: center;
+  }
+  .halloween-image,
+  .about-image {
+    margin: 5% auto;
+  }
+  .collection {
+    margin: 0;
+  }
+  .collection-container {
+    margin: 5% auto;
+  }
+  .Team-head p {
+    text-align: center;
+  }
+  .team-image {
+    text-align: center;
+  }
+  .footer .col {
+    padding-top: 15%;
+  }
+}
+@media (max-width: 786px) {
+  .pt-5 {
+    padding: 3rem !important;
+  }
+  video{
+    object-fit: cover;
+  }
+  .video-container {
+    height: 50% !important;
+}
+  .main-desc {
+    font-size: 1.1rem;
+  }
+  .About {
+    margin: 15% auto;
+  }
+}
+@media (max-width: 425px) {
+  .pt-5 {
+    padding: 1rem !important;
+  }
+  .video-container {
+    height: 83% !important;
+}
+  h1 {
+    font-size: 2rem;
+  
+  }
+  .main-desc {
+    font-size: 0.8rem;
+  }
+  .d-flex{
+    justify-content: center;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p,
+  a,
+  summary,li {
+    font-size: 0.8rem;
+  }
+  .About {
+    text-align: center;
+    margin: 35% auto;
+  }
+  .col {
+    text-align: center;
+  }
+  .about-image img {
+    width: 70% !important;
+  }
+  .collection-container img {
+    width: 70%;
+    height: 70%;
+    border: solid 5px #b11515;
+  }
+  .team-image img {
+    height: 250px;
+    width: 250px;
+  }
+  .team-text p {
+    font-size: 1rem;
+  }
+  .team-text h2 {
+    font-size: 2rem;
+  }
+}
+
+.avatar-image {
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+.avatar-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 5px 2px #000;
+}
+.underLineText {
+  cursor: pointer;
+}
+.underLineText::after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  /* background: #fff; */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* background-size: 400% 400%; */
+  /* animation: gradient 15s ease infinite; */
+  /* height: 100vh; */
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.underLineText:hover:after {
+  width: 100%;
+  left: 0;
+}
